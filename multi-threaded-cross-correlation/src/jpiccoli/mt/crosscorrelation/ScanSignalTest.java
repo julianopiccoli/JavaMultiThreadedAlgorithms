@@ -13,15 +13,15 @@ import java.util.concurrent.Future;
  * Command-line utility used to test the functionality provided by MTSignalScan.
  * It generates a rectangular signal with a positive interval followed by a negative one.
  * The signal is then attenuated and added to a random-noise-filled waveform.
- * Using the default parameters, it can accurately calculate the correct signal position most (roughly 90%) of the time.
+ * 
  * @author Piccoli
  *
  */
 public class ScanSignalTest {
 	
-	private static final int DEFAULT_POSITIVE_LENGTH = 200;
+	private static final int DEFAULT_POSITIVE_LENGTH = 300;
 	private static final float DEFAULT_POSITIVE_VALUE = 20.0f;
-	private static final int DEFAULT_NEGATIVE_LENGTH = 100;
+	private static final int DEFAULT_NEGATIVE_LENGTH = 200;
 	private static final float DEFAULT_NEGATIVE_VALUE = 10.0f;
 	private static final int DEFAULT_WAVEFORM_LENGTH = 10000000;
 	private static final float DEFAULT_NOISE_AMPLITUDE = 30.0f;

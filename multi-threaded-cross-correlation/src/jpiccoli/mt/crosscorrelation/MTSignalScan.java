@@ -70,13 +70,13 @@ public class MTSignalScan {
 			}
 			localOffset = nextOffset.getAndIncrement();
 		}
-		checkAndSwap(localPosition, localOffset);
+		checkAndSwap(localPosition, localMaxCorrelation);
 	}
 	
-	private synchronized void checkAndSwap(int offset, float correlation) {
+	private synchronized void checkAndSwap(int position, float correlation) {
 		if (correlation > maximumCorrelation) {
 			maximumCorrelation = correlation;
-			future.setPosition(offset);
+			future.setPosition(position);
 		}
 	}
 	
