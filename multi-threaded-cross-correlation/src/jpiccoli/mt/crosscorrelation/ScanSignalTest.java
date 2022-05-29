@@ -23,7 +23,7 @@ public class ScanSignalTest {
 	private static final float DEFAULT_POSITIVE_VALUE = 20.0f;
 	private static final int DEFAULT_NEGATIVE_LENGTH = 200;
 	private static final float DEFAULT_NEGATIVE_VALUE = 10.0f;
-	private static final int DEFAULT_WAVEFORM_LENGTH = 10000000;
+	private static final int DEFAULT_WAVEFORM_LENGTH = 100000000;
 	private static final float DEFAULT_NOISE_AMPLITUDE = 30.0f;
 	private static final float DEFAULT_SIGNAL_GAIN = 0.7f;
 	
