@@ -40,7 +40,7 @@ public class TestImageDownscaling {
 		int[] scaledRgb = AreaAveragingDownscaling.scale(rgb, source.getWidth(), source.getHeight(), scaledWidth, scaledHeight);
 		long timestamp2 = System.currentTimeMillis();
 		
-		File outputFile = new File(imageFile.getParent(), removeExtension(imageFile.getName()) + "-mt-scaled.jpg");
+		File outputFile = new File(imageFile.getParent(), removeExtension(imageFile.getName()) + "-scaled.jpg");
 		System.out.println("Outputting resulting image to file " + outputFile.getAbsolutePath());
 		outputImage(scaledWidth, scaledHeight, scaledRgb, outputFile);
 		
@@ -51,7 +51,7 @@ public class TestImageDownscaling {
 		scaledRgb = future.get();
 		long timestamp4 = System.currentTimeMillis();
 		
-		outputFile = new File(imageFile.getParent(), removeExtension(imageFile.getName()) + "-scaled.jpg");
+		outputFile = new File(imageFile.getParent(), removeExtension(imageFile.getName()) + "-mt-scaled.jpg");
 		System.out.println("Outputting resulting image to file " + outputFile.getAbsolutePath());
 		outputImage(scaledWidth, scaledHeight, scaledRgb, outputFile);
 		

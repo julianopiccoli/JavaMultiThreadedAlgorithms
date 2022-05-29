@@ -91,7 +91,8 @@ public class MultiThreadedAreaAveragingDownscaler {
 	}
 
 	/**
-	 * Scales down the specified image.
+	 * Scales down the specified image. This version of the scale method will execute the downscaling process
+	 * using a fixed thread pool containing one thread per CPU core.
 	 * @see MultiThreadedAreaAveragingDownscaler.scale
 	 */
 	public static CompletableFuture<int[]> scale(final int[] rgb, int sourceWidth, int sourceHeight, int scaledWidth, int scaledHeight) {
