@@ -55,6 +55,7 @@ public class MergeSort<T> extends AbstractSortingAlgorithm<T> {
 	}
 	
 	@Override
+	@SuppressWarnings("unchecked")
 	public void sort(final T[] elements, final int position, final int length) {
 
 		T[] source = elements;
